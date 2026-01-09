@@ -8,7 +8,7 @@ from scrapers import ibm_scraper
 
 
 class Publisher:
-    MAX_KAFKA_MSG_SIZE = 1000000  # 1 MB safe limit
+    MAX_KAFKA_MSG_SIZE = 1000000  # Under 1 MB [safe limit]
 
     def __init__(self):
         self.csv_scrapers = [ibm_scraper]
