@@ -62,9 +62,9 @@ This webpage is designed to assist job seekers in finding positions that better 
 - **Kafka** 
 - **MySQL** 
 
-- **Caddy** 
-- **Hashicorp Vault** 
-- **Hashicorp Consul** 
+- **Caddy (In-Development)** 
+- **Hashicorp Vault (In-Development)** 
+- **Hashicorp Consul (In-Development)** 
 
 Access the frontend:
 
