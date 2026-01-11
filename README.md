@@ -6,7 +6,6 @@ Welcome to the The Job Searcher!
 
 ## Table of Contents
 - [Usage](#usage)
-- [Features](#features)
 - [Technologies Used](#technologies-used)
 - [Requirements](#requirements)
 - [File Structure](#file-structure)
@@ -19,8 +18,6 @@ Welcome to the The Job Searcher!
 ## Usage
 
 This application is designed to assist job seekers in finding positions that better suite their skills and interests. 
-
-## Features
 
 # Microservices Architecture
 ![alt text for screen readers](/The_Job_Searcher_Architecture.jpg "The Job Searcher Architecture")
