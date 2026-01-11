@@ -61,12 +61,12 @@ To run this website locally, follow these steps:
 
     using sh:
     ```sh
-    git clone git@github.com:tmooney84/The-Job-Predator.git
+    git clone git@github.com:tmooney84/job-searcher.git
     ```
 
     using https:
     ```sh
-    git clone https://github.com/tmooney84/The-Job-Predator.git
+    git clone https://github.com/tmooney84/job-searcher.git
     ```
 
 2. Navigate to the project directory:
