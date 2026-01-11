@@ -75,8 +75,6 @@ The-Job-Board 2/
 ├── docker-compose.yml
 ├── docker_build_and_spin_up.sh
 ├── docker_stop_and_clean.sh
-├── README.md
-├── The_Job_Searcher_Architecture.jpg
 ```
 
 ## Installation
