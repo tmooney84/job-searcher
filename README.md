@@ -71,7 +71,7 @@ To run this website locally, follow these steps:
 
 2. Navigate to the project directory:
     ```sh
-    cd The-Job-Predator/
+    cd "The-Job-Board 2"
     ```
 
 3. Build and start services:
