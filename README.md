@@ -5,14 +5,40 @@ Welcome to the The Job Searcher!
 
 
 ## Table of Contents
-- [File Structure](#file-structure)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
 - [Technologies Used](#technologies-used)
+- [Requirements](#requirements)
+- [File Structure](#file-structure)
+- [Installation](#installation)
+- [Troubleshooting](#troubleshooting)
 - [Future Improvements](#future-improvements)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Usage
+
+This application is designed to assist job seekers in finding positions that better suite their skills and interests. 
+
+## Features
+
+# Microservices Architecture
+![alt text for screen readers](/The_Job_Searcher_Architecture.jpg "The Job Searcher Architecture")
+
+## Technologies Used
+- **Python** 
+- **Flask**  
+- **Selenium**
+- **Beautifulsoup** 
+- **Kafka** 
+- **MySQL** 
+
+- **Caddy (In-Development)** 
+- **Hashicorp Vault (In-Development)** 
+- **Hashicorp Consul (In-Development)** 
+
+## Requirements
+In order to run this containerized application, you will need to have Docker and/or Docker Desktop installed. For more details, navigate your web browser to https://docs.docker.com/engine/install for more details.
 
 ## File Structure
 ```text
@@ -74,42 +100,27 @@ To run this website locally, follow these steps:
     cd "The-Job-Board 2"
     ```
 
-3. Build and start services:
+3. To build and start services:
 
-    ```bash
-    $ docker-compose up --build
+    ```sh
+    $ ./docker_build_and_spin_up.sh
     ```
 
-4. Open `localhost:6300` in your preferred web browser
+4. Open `localhost:6300` in your preferred web browser to view the front end of the application.
 
-5. Enjoy!
+5. To close the application and remove old containers run:
+    ```sh
+    ./docker_stop_and_clean.sh
+    ```
 
-## Usage
+6. Enjoy!
 
-This webpage is designed to assist job seekers in finding positions that better suite their skills and interests. 
+## Troubleshooting
 
-## Features
-
-# Microservices Architecture
-![alt text for screen readers](/The_Job_Searcher_Architecture.jpg "The Job Searcher Architecture")
-
-## Technologies Used
-- **Python** 
-- **Flask**  
-- **Selenium**
-- **Beautifulsoup** 
-- **Kafka** 
-- **MySQL** 
-
-- **Caddy (In-Development)** 
-- **Hashicorp Vault (In-Development)** 
-- **Hashicorp Consul (In-Development)** 
-
-Access the frontend:
-
-Navigate to http://localhost:6300 to view the scraped information.
+Navigate to ```localhost:9000``` to access the KAFDROP GUI interface to see if the sql_queue topic is set up correctly. It should include a topic named sql_queue that has 3 partitions and a replication factor of 3. If missing add it manually through the KAFDROP GUI by pressing the "+New" button and filling out the topic information.
 
 ## Future Improvements
+- Complete the authentication logic including OAuth2, authorization, 2-Factor Authentication security, secrets management (Hashicorp Vault), service discovery/service mesh (Hashicorp Consul)
 - Build out Model Context Protocol Server, Prompting, Tools and Resources
 - Refine the job search functionality using prompting and MCP
 - Create an automated resume editor using MCP 
