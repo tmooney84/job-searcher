@@ -5,7 +5,7 @@ Welcome to the The Job Searcher!
 
 
 ## Table of Contents
-
+- [File Structure](#file-structure)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -13,6 +13,43 @@ Welcome to the The Job Searcher!
 - [Future Improvements](#future-improvements)
 - [Contributing](#contributing)
 - [License](#license)
+
+## File Structure
+The-Job-Board 2/
+├── consumer_service/
+│   ├── Dockerfile
+│   ├── consumer_main.py
+│   ├── consumer_service.py
+│   └── requirements.txt
+├── frontend/
+│   ├── Dockerfile
+│   ├── templates/
+│   │   └── detail_page.html
+│   │   └── index.html
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── models.py
+│   └── requirements.txt
+├── models/
+│   ├── __init__.py
+│   ├── init.sql
+│   ├── models.py
+├── scraper_orchestrator/
+│   ├── Dockerfile
+│   ├── publisher_service.py
+│   ├── publisher_main.py
+│   ├── requirements.txt
+│   ├── scrapers/
+│   │   └── ibm_scraper.py
+│   │   └── site1_scraper.py
+│   │   └── site2_scraper.py
+│   └── requirements.txt
+├── clear_kafka_logs.sh
+├── docker-compose.yml
+├── docker_build_and_spin_up.sh
+├── docker_stop_and_clean.sh
+├── README.md
+├── The_Job_Searcher_Architecture.jpg
 
 ## Installation
 
