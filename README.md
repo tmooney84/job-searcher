@@ -15,6 +15,7 @@ Welcome to the The Job Searcher!
 - [License](#license)
 
 ## File Structure
+```text
 The-Job-Board 2/
 ├── consumer_service/
 │   ├── Dockerfile
@@ -50,6 +51,7 @@ The-Job-Board 2/
 ├── docker_stop_and_clean.sh
 ├── README.md
 ├── The_Job_Searcher_Architecture.jpg
+```
 
 ## Installation
 
