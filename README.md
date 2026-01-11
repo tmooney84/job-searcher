@@ -83,7 +83,7 @@ The-Job-Board 2/
 
 To run this website locally, follow these steps:
 
-- Clone the repository:
+1. Clone the repository:
 
     using sh:
     ```sh
