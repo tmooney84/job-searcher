@@ -69,8 +69,8 @@ The-Job-Board 2/
 │   │   └── site2_scraper.py
 │   └── requirements.txt
 ├── clear_kafka_logs.sh
-├── docker-compose.yml
 ├── docker_build_and_spin_up.sh
+├── docker-compose.yml
 ├── docker_stop_and_clean.sh
 ```
 
